@@ -1,0 +1,1 @@
+package blanutsa.dmitriy.models.enums;public enum CarType {    HATCHBACK,    SEDAN,    MVP,    SUV,    CROSSOVER,    COUPE,    CONVERTIBLE;}

@@ -1,0 +1,1 @@
+package blanutsa.dmitriy.controller.dto;import java.io.Serializable;public class AttorneyPowerDto implements Serializable {    private static final long serialVersionUID = -4601514561155816669L;}

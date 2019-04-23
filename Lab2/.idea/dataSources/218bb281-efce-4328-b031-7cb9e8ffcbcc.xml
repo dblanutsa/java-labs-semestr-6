@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="postgres@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.10">
+    <root id="1">
+      <ServerVersion>11.2</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>13012</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>123</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <role id="3" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="4" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="5" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="6" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="12" parent="2" name="information_schema">
+      <ObjectId>12716</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="13" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="14" parent="2" name="pg_temp_1">
+      <ObjectId>11804</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="15" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="16" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11805</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="17" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <Owner>postgres</Owner>
+      <IntrospectionTimestamp>2019-04-22.22:30:00.484</IntrospectionTimestamp>
+      <IntrospectionStateNumber>580</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="18" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="19" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="20" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="21" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="22" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="23" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <sequence id="24" parent="17" name="attorney_power_id_seq">
+      <ObjectId>16435</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>578</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="25" parent="17" name="person_id_seq">
+      <ObjectId>16404</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>575</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="26" parent="17" name="picture_id_seq">
+      <ObjectId>16422</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>577</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <table id="27" parent="17" name="attorney_power">
+      <ObjectId>16437</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>578</StateNumber>
+    </table>
+    <table id="28" parent="17" name="car">
+      <ObjectId>16412</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>576</StateNumber>
+    </table>
+    <table id="29" parent="17" name="person">
+      <ObjectId>16406</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>580</StateNumber>
+    </table>
+    <table id="30" parent="17" name="picture">
+      <ObjectId>16424</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>577</StateNumber>
+    </table>
+    <column id="31" parent="27" name="created_at">
+      <Position>1</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>578</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="32" parent="27" name="updated_at">
+      <Position>2</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>578</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="33" parent="27" name="id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>578</StateNumber>
+      <DefaultExpression>nextval(&apos;attorney_power_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>attorney_power_id_seq</SequenceName>
+    </column>
+    <column id="34" parent="27" name="person_id">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>578</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="35" parent="27" name="car_number">
+      <Position>5</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>578</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="36" parent="27" name="from_date">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>578</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="37" parent="27" name="to_date">
+      <Position>7</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>578</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="38" parent="27" name="attorney_power_pkey">
+      <ObjectId>16441</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="39" parent="27" name="attorney_power_pkey">
+      <ObjectId>16442</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>attorney_power_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="40" parent="27" name="attorney_power_person_id_fkey">
+      <ObjectId>16443</ObjectId>
+      <ColNames>person_id</ColNames>
+      <RefTableId>16406</RefTableId>
+      <RefColPositions>3</RefColPositions>
+      <RefTableName>person</RefTableName>
+      <RefKeyName>person_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="41" parent="27" name="attorney_power_car_number_fkey">
+      <ObjectId>16448</ObjectId>
+      <ColNames>car_number</ColNames>
+      <RefTableId>16412</RefTableId>
+      <RefColPositions>3</RefColPositions>
+      <RefTableName>car</RefTableName>
+      <RefKeyName>car_pkey</RefKeyName>
+      <RefColNames>number</RefColNames>
+    </foreign-key>
+    <column id="42" parent="28" name="created_at">
+      <Position>1</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>576</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="43" parent="28" name="updated_at">
+      <Position>2</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>576</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="44" parent="28" name="number">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>576</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="45" parent="28" name="type">
+      <Position>4</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>576</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="46" parent="28" name="manufacturer">
+      <Position>5</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>576</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="47" parent="28" name="model">
+      <Position>6</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>576</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="48" parent="28" name="product_year">
+      <Position>7</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>576</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="49" parent="28" name="owner_id">
+      <Position>8</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>576</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="50" parent="28" name="car_pkey">
+      <ObjectId>16415</ObjectId>
+      <ColNames>number</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="51" parent="28" name="car_pkey">
+      <ObjectId>16416</ObjectId>
+      <ColNames>number</ColNames>
+      <UnderlyingIndexName>car_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="52" parent="28" name="car_owner_id_fkey">
+      <ObjectId>16417</ObjectId>
+      <ColNames>owner_id</ColNames>
+      <RefTableId>16406</RefTableId>
+      <RefColPositions>3</RefColPositions>
+      <RefTableName>person</RefTableName>
+      <RefKeyName>person_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="53" parent="29" name="created_at">
+      <Position>1</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>575</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="54" parent="29" name="updated_at">
+      <Position>2</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>575</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="55" parent="29" name="id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>575</StateNumber>
+      <DefaultExpression>nextval(&apos;person_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>person_id_seq</SequenceName>
+    </column>
+    <column id="56" parent="29" name="first_name">
+      <Position>4</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>575</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="57" parent="29" name="last_name">
+      <Position>5</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>575</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="58" parent="29" name="birth_date">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>575</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="59" parent="29" name="car_number">
+      <Position>7</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="60" parent="29" name="person_pkey">
+      <ObjectId>16410</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="61" parent="29" name="person_pkey">
+      <ObjectId>16411</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>person_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="62" parent="30" name="created_at">
+      <Position>1</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>577</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="63" parent="30" name="updated_at">
+      <Position>2</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>577</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="64" parent="30" name="id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>577</StateNumber>
+      <DefaultExpression>nextval(&apos;picture_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>picture_id_seq</SequenceName>
+    </column>
+    <column id="65" parent="30" name="title">
+      <Position>4</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <StateNumber>577</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="66" parent="30" name="path">
+      <Position>5</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>577</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="67" parent="30" name="main">
+      <Position>6</Position>
+      <DataType>boolean|0s</DataType>
+      <StateNumber>577</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="68" parent="30" name="car_number">
+      <Position>7</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>577</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="69" parent="30" name="picture_pkey">
+      <ObjectId>16428</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="70" parent="30" name="picture_pkey">
+      <ObjectId>16429</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>picture_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="71" parent="30" name="picture_car_number_fkey">
+      <ObjectId>16430</ObjectId>
+      <ColNames>car_number</ColNames>
+      <RefTableId>16412</RefTableId>
+      <RefColPositions>3</RefColPositions>
+      <RefTableName>car</RefTableName>
+      <RefKeyName>car_pkey</RefKeyName>
+      <RefColNames>number</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

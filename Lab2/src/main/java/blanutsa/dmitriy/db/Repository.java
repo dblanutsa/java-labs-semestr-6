@@ -1,0 +1,1 @@
+package blanutsa.dmitriy.db;public interface Repository {}

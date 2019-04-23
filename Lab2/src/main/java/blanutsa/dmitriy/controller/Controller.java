@@ -1,0 +1,1 @@
+package blanutsa.dmitriy.controller;import java.util.List;public interface Controller<D, K> {    TableResponse<D> getList(ListRequest request);    TableResponse edit(D entity);    void delete(List<K> ids);}

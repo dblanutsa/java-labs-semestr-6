@@ -1,0 +1,1 @@
+package blanutsa.dmitriy.services.baseQuery;import org.hibernate.validator.constraints.Length;import javax.validation.constraints.NotBlank;public class Order {    @NotBlank    @Length(max = 20)    private String field;    private OrderType type = OrderType.ASC;    @Override    public String toString() {        return field + " " + type.toString();    }}

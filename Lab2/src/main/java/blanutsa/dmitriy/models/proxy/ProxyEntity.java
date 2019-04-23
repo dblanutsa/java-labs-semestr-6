@@ -1,0 +1,1 @@
+package blanutsa.dmitriy.models.proxy;import blanutsa.dmitriy.db.Repository;public interface ProxyEntity {    Repository repository = null;}

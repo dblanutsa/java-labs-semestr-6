@@ -1,0 +1,1 @@
+package blanutsa.dmitriy.controller.dto;import java.io.Serializable;public class CarDto implements Serializable {    private static final long serialVersionUID = 243368235529196261L;}

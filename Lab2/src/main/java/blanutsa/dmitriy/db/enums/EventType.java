@@ -1,0 +1,1 @@
+package blanutsa.dmitriy.db.enums;public enum EventType {    CREATING,    UPDATING,    DELETING;}
