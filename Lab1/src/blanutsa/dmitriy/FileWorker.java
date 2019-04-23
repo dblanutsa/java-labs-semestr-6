@@ -2,13 +2,13 @@ package blanutsa.dmitriy;
 
 import java.io.*;
 import java.util.Scanner;
+import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class FileWorker {
+import static blanutsa.dmitriy.StringUtils.cleanRow;
 
-    public static final int MIN_LEXEME_LENGTH = 3;
-    public static final int MAX_LEXEME_LENGTH = 5;
+public class FileWorker {
 
     private Scanner scanner = new Scanner(System.in);
 
@@ -24,25 +24,23 @@ public class FileWorker {
         if (!file.exists()) {
             System.out.println("File " + path + " not exists.");
         } else if (file.isDirectory()) {
-            openDirectory(new File(path));
+            openDirectory(new File(path), Executors.newCachedThreadPool());
         } else if (file.isFile()) {
             openFile(file);
         }
     }
 
-    private void openDirectory(File directory) {
+    private void openDirectory(File directory, ExecutorService executorService) {
         System.out.println("In directory: " + directory.getName());
         File[] elements = directory.listFiles();
 
         if (elements != null) {
-            ExecutorService executorService = Executors.newFixedThreadPool(elements.length);
-
             for(File element : elements) {
                 executorService.submit(() -> {
                     if(element.isFile()){
                         openFile(element);
                     } else if(element.isDirectory()){
-                        openDirectory(element);
+                        openDirectory(element, executorService);
                     }
                     return null;
                 });
@@ -75,18 +73,5 @@ public class FileWorker {
                 System.err.println("Error occurred during writing file.");
             }
         }
-    }
-
-    private String cleanRow(String row) {
-        String[] lexemes = row.split("\\s");
-
-        for (String lexeme : lexemes) {
-            if (!lexeme.equals("") && lexeme.length() >= MIN_LEXEME_LENGTH && lexeme.length() <= MAX_LEXEME_LENGTH) {
-                row = row.replace(lexeme, "");
-
-                System.out.println(String.format("      Removed \"%s\"", lexeme));
-            }
-        }
-        return row;
     }
 }
