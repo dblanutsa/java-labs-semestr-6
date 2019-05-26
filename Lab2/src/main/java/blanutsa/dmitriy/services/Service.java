@@ -1,1 +1,0 @@
-package blanutsa.dmitriy.services;public interface Service {}

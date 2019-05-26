@@ -2,7 +2,6 @@ package blanutsa.dmitriy;
 
 import java.io.*;
 import java.util.Scanner;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

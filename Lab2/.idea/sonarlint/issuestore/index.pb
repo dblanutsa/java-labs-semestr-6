@@ -39,8 +39,6 @@ f
 6src/main/java/blanutsa/dmitriy/db/anotations/Lazy.java,5\7\574b8f9b8b52e6f39dd806ab7f85e89c40050636
 a
 1src/main/java/blanutsa/dmitriy/db/Repository.java,8\4\8467c9908f8d2627c1875e5aaa4d9b855d6f0082
-l
-<src/main/java/blanutsa/dmitriy/models/proxy/ProxyEntity.java,6\c\6c64b305f5416751914a1a69b225b2576f47de0d
 a
 1src/main/java/blanutsa/dmitriy/models/Person.java,a\0\a0f4f953de5c23bee5de21c1f03fa6568b1fa052
 b
@@ -53,3 +51,7 @@ h
 .src/main/java/blanutsa/dmitriy/models/Car.java,2\3\23badbee19bf34487aca1372234c9c1865dd9bdd
 i
 9src/main/java/blanutsa/dmitriy/models/proxy/CarProxy.java,c\9\c97661d50074e285b195f0593f6bd44706cc56ed
+`
+0src/main/java/blanutsa/dmitriy/models/Model.java,0\a\0af90215c94f65e54928201ab990ce75eb46d581
+h
+8src/main/java/blanutsa/dmitriy/models/enums/CarType.java,b\7\b7de0c5abf2a10eda3214ca8117dfc24014ab46c

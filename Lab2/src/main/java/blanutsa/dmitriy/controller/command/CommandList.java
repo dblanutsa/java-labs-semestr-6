@@ -1,0 +1,1 @@
+package blanutsa.dmitriy.controller.command;public enum CommandList {    MANUFACTURER_LIST(new ManuracturerList());    private Command command;    CommandList(Command command) {        this.command = command;    }    public Command getCommand() {        return command;    }}

@@ -1,0 +1,1 @@
+package blanutsa.dmitriy.errors;public class OrdersFormatException extends RuntimeException {    private static final long serialVersionUID = 3232334209272185520L;    @Override    public String getMessage() {        return "Wrong orders format!!!";    }}

@@ -1,0 +1,1 @@
+package blanutsa.dmitriy.models;import lombok.Getter;import lombok.Setter;import javax.validation.constraints.NotNull;@Getter@Setterpublic class Manufacturer extends BaseEntity {    @NotNull    private Integer id;    @NotNull    private String name;    private String description;}
